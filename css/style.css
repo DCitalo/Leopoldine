@@ -1,0 +1,419 @@
+/*RESET*/
+@charse "UTf-8";
+*, *:after, *:before{
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: justify;
+}
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+img{
+    width:100%;
+    height: auto;
+}
+/*RESET*/
+/*Fontes e PadrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes*/
+.anton{
+    font-family: 'Anton', sans-serif;
+}
+.coiny{
+    font-family: 'Coiny', cursive;
+}
+.courgette{
+    font-family: 'Courgette', cursive;
+}
+.trirong{
+    font-family: 'Trirong', serif;
+    line-height: 1.6;
+}
+.text-center{
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+.Bg-color-1{
+    background: #382316;
+}
+.Bg-color-2{
+    background: #e7e7e7;
+}
+.Bg-color-3{
+    background: #d3cab6;
+}
+.DIB{
+    display: inline-block;
+}
+.DBA{
+    display: block;
+    position: absolute;
+}
+.DF{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;  
+}
+.DIF{
+    -webkit-display: inline-flex;
+        -ms-display: inline-flex;
+            display: inline-flex;   
+}
+.FW{
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+}
+.PA{
+    position: absolute !important;
+}
+.PF{
+    position: fixed !important;
+}
+.DN{
+    display: none;
+}
+.DB{
+    display: block;
+}
+.FL{
+    float: left;
+}
+.FR{
+    float: right;
+}
+.hide{
+    visibility: hidden;
+}
+/*Fontes e PadrÃƒÂµes*/
+/*CONTAINER*/
+.container-100{
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-100-15{
+    width: calc(100% - 30px);
+    margin:0 15px;
+    position:relative;
+    height:auto;
+}
+.container-100-15{
+    width: calc(100% - 30px);
+    margin:15px;
+    position:relative;
+    height:auto;
+}
+.container-90{
+    width:90%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-80{
+    width:80%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-70{
+    width: 70%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-75{
+    width:75%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-60{
+    width:60%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-50{
+    width: 50%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-50-l-30{
+    width: calc(50% - 30px);
+    margin:15px;
+    position:relative;
+    height:auto;
+}
+.container-50-r-15{
+    width: calc(50% - 15px);
+    margin:15px 15px 15px 0px;
+    position:relative;
+    height:auto;
+}
+.container-40{
+    width:40%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-33{
+    width: 33.333%;
+}
+.container-30{
+    width: 30%;
+    margin:0 auto;
+    position:relative;
+    height:auto; 
+}
+.container-25{  
+    width:25%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-20{
+    width:20%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-16{
+    width:16.6666666666%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-15{
+    width:15%;
+    margin:0 auto;
+    position:relative;
+    height:auto;
+}
+.container-10{
+    width:10%;
+    margin:0 auto;
+    height:auto;
+}
+/*CONTAINER*/
+.md-7{
+    margin-bottom: 7.5px;
+}
+.mt-7{
+    margin-top: 7.5px;
+}
+/*HEADER*/
+header{
+    padding: 15px 0;
+    height: 120px !important;
+    top:0;
+    z-index:99;
+}
+.cont-logo{
+    max-width: 180px;
+}
+.cont-icon{
+    max-width: 65px;w
+}
+.cont-menu{
+    color: #FFFFFF;
+    box-sizing: content-box;
+    padding: 31px 0;
+}
+/*HEADER*/
+/*BANNER-PRINCIPAL-HOME*/
+.bg-parallax{
+    width:100%;
+    margin:0 auto;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: top;
+}
+.banner-home{
+    background-image:url('../images/banners-decorus.jpg');
+}
+#bannerhome{
+    margin-top: 120px;
+    max-height: 620px;
+}
+#bannerbuttons{
+    top:50%;
+    margin-top: -70px;
+    position: absolute;
+    left: 50%;
+    margin-left:-25%;
+}
+.button-banner{
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:#FFFFFF;
+    border:1px solid #d3cab6;
+    max-width: 180px;
+    min-width: 130px;
+    margin: 15px 30px;
+    padding: 12px 8px;
+    cursor:pointer;
+}
+.button-banner:hover{
+    color: #d3cab6;
+    text-shadow: 1px 1px #000000;
+    border:1px solid #FFFFFF;
+    background: transparent;
+}
+.banner-title{
+    color: #FFFFFF;
+    font-size: 80px;
+}
+/*BANNER-PRINCIPAL-HOME*/
+/**/
+.pad-20{
+    padding: 20px;
+}
+.bloc-1 {
+    max-width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -366px;
+}
+
+.container-100.Bg-color-2.pad-20 {
+    height: 481px;
+}
+.bloc-3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25%;
+    margin-top: -150px;
+    height: 300px;
+}
+.bloc-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -130px;
+    max-width: 261px;
+    margin-top: -198px;
+}
+/*MB-Settings*/
+@media (max-width: 1070px){
+    .tb-hide{
+        display: none;
+        visibility:hidden;
+    }
+    .tb-container-100{
+        width:100% !important;
+    }
+    .tb-container-90{
+        width:90% !important;
+    }
+    .tb-container-80{
+        width:80% !important;
+    }
+    .tb-container-70{
+        width:70% !important;
+    }
+    .tb-container-60{
+        width:60% !important;
+    }
+    .tb-container-50{
+        width:50% !important;
+    }
+    .tb-container-50-5{
+        width: calc(50% - 5px) !important;
+    }
+    .tb-container-40{
+        width:40% !important;
+    }
+    .tb-container-30{
+        width:30% !important;
+    }
+    .tb-container-20{
+        width:20% !important;
+    }
+    .tb-container-10{
+        width:10% !important;
+    }
+}
+@media (max-width: 710px){
+    .mb-hide{
+        display: none;
+        visibility:hidden;
+    }
+    .mb-container-100{
+        width:100% !important;
+    }
+    .mb-container-90{
+        width:90% !important;
+    }
+    .mb-container-80{
+        width:80% !important;
+    }
+    .mb-container-70{
+        width:70% !important;
+    }
+    .mb-container-60{
+        width:60% !important;
+    }
+    .mb-container-50{
+        width:50% !important;
+    }
+    .mb-container-40{
+        width:40% !important;
+    }
+    .mb-container-30{
+        width:30% !important;
+    }
+    .mb-container-20{
+        width:20% !important;
+    }
+    .mb-container-10{
+        width:10% !important;
+    }
+}
+/*MB-Settings*/ 
