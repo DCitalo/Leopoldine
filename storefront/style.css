@@ -79,7 +79,7 @@ footer{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 }
-.VidaLoka , .VidaLoka > p{
+.VidaLoka , .VidaLoka > p , .VidaLoka > .descricao * , .VidaLoka > div{
 font-family:'freight';
 }
 .icon-share::before{
@@ -339,6 +339,7 @@ a{
 }
 .cont-menu > ul{
     align-items: baseline;
+    -webkit-align-items: baseline;
 }
 .cont-busca-menu > div > * {
     display: none;
@@ -346,6 +347,7 @@ a{
 
 #search-2 {
     display: flex;
+    display: -webkit-flex;
     width: 100%;
     margin-bottom: 0;
     height: 100%;
@@ -576,6 +578,7 @@ h5.blog-text {
 }
 .container-60.foot-insta {
     width: 1100px;
+    font-weight: 100;
 }
 ul.lightwidget {
     width: 100%  !important;
@@ -698,11 +701,6 @@ ul.social-single-post.container-100.DF.FW {
     text-align: right;
 }
 
-ul.social-single-post > li {
-    margin: 10px 0px;
-    text-align: right;
-    padding: 0 40px;
-}
 #header{
     width:940px;
     margin:10px;
@@ -883,7 +881,7 @@ ol.commentlist ul li{
     width: 92px;
     height: 92px;
     margin-left: -46px;
-    bottom: 159px;
+    bottom: 123px;
 }
 
 a.blog-cont-conteudo {
@@ -902,7 +900,7 @@ a.blog-cont-conteudo {
     left: 0;
     width: 325px;
     bottom: 70px;
-    height: 270px;
+    height: 203px;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -959,6 +957,9 @@ div.share-hover > a {
     overflow: hidden;
     display: block;
 }
+.blog-artigo > a:nth-child(1):hover{
+    opacity:0.6;
+}
 .blog-first > a:nth-child(1) > img{
     width: 110%;
     left: 50%;
@@ -994,14 +995,14 @@ article.cont-post-50 > a > img {
     width: 360px;
     margin-left: -180px;
     padding: 20px 44px;
-    height: 170px;
+    height: 192px;
     z-index:98;
 }
 
 .blog-first > a.blog-cont-conteudo {
     width: 520px;
     padding: 40px 60px;
-    height: 270px;
+    height: 203px;
     margin-left: -260px;
 }
 
@@ -1026,7 +1027,7 @@ li.lightwidget__tile:nth-child(6) {
 
 .cont-post-50 > .share-hover.DF {
     width: 360px;
-    height: 170px;
+    height: 192px;
     left: 98px;
     bottom: 70px;
 }
@@ -1168,6 +1169,23 @@ h1.single-post-title {
 .cont-single-post-content{
 	margin-top: 120px;
 	margin-bottom: 100px;
+}
+.cont-social-single-post{
+    margin-top: 120px;
+    font-size: 18px;
+}
+ul.social-single-post > li {
+    margin: 10px 0px;
+    text-align: center;
+    padding: 0 40px 0 120px;
+    font-size: 18px;
+}
+ul.social-single-post > li:nth-child(1) {
+    margin: 0 0 10px 0;
+}
+p.post-date {
+    text-transform: uppercase;
+    word-spacing: 5px;
 }
 /*Single-Page*/
 /*MB-Settings*/

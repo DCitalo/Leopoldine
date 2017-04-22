@@ -3,12 +3,30 @@
 Template Name: Blog
 */ 
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.fontify.me/wf/d0eb2f8a3f3423e5a3ca74c7b4b58fae" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<title><?php wp_title(''); ?></title>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
+
+</head>
+<body class="<?php wp_title(''); ?>">
 <?php get_header(); ?>
 	<div id="conteudo" class="container-80">
 		<?php $latest_post = get_posts( 'numberposts=1' ); ?>
 			<?php foreach( $latest_post as $post ) : setup_postdata( $post ); ?>
 	    		<article class="artigo container-100 blog-first blog-artigo" >
-	    			<a class="responsive container-50"><?php the_post_thumbnail(); ?></a>
+	    			<a href="<?php the_permalink() ?>" class="responsive container-50"><?php the_post_thumbnail(); ?></a>
 	    			<span class="post-share-trigger"><i class="icon-share" aria-hidden="true"></i></span>
 					<div class="share-hover DF">
 						<a class="container-33" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
