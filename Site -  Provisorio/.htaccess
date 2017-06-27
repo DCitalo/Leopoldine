@@ -1,0 +1,6 @@
+AddHandler php56-script .php
+suPHP_ConfigPath /home/leopoldinebolsas/ 
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.leopoldinebolsas.com.br/$1 [R,L] 

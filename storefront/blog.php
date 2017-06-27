@@ -35,9 +35,9 @@ Template Name: Blog
 					</div>
 					<a href="<?php the_permalink() ?>" class="blog-cont-conteudo">
 						<div class="blog-article-title">
-							<h4 class="lato-reg" style="font-size: 14px;font-weight: 400;text-transform: uppercase;text-align: center;"><?php the_subtitle(); ?></h4>
+							<h4 class="lato-reg" style="font-size: 14px;font-weight: 400;text-transform: uppercase;text-align: center;    width: 100%;"><?php the_subtitle(); ?></h4>
 							<h2 class="news-blog-title VidaLoka"><?php the_title(); ?></h2>	
-							<h3 class="news-blog-conteudo VidaLoka " style="font-size: 12px;"><?php the_excerpt(); ?></h3>
+							<h3 class="news-blog-conteudo VidaLoka "><?php the_excerpt(); ?></h3>
 							<div class="container-100 read-more">SAIBA MAIS</div>
 						</div>
 					</a>											
@@ -58,9 +58,9 @@ Template Name: Blog
 					</div>
 					<a href="<?php the_permalink() ?>" class="blog-cont-conteudo">
 						<div class="blog-article-title">
-							<h4 class="lato-reg" style="font-size: 14px;font-weight: 400;text-transform: uppercase;text-align: center;"><?php the_subtitle(); ?></h4>
+							<h4 class="lato-reg" style="font-size: 14px;font-weight: 400;text-transform: uppercase;text-align: center;    width: 100%;"><?php the_subtitle(); ?></h4>
 							<h2 class="news-blog-title VidaLoka"><?php the_title(); ?></h2>	
-							<!--<h3 class="news-blog-conteudo VidaLoka" style="font-size: 12px;"></h3>-->
+							<h3 class="news-blog-conteudo VidaLoka"><?php the_excerpt(); ?></h3>
 							<div class="container-100 read-more">SAIBA MAIS</div>
 						</div>
 					</a>					
@@ -75,14 +75,16 @@ Template Name: Blog
 			    	<article class="artigo container-100 cont-post-80 DF FW blog-artigo" >
 			    	<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
 						<div class="blog-article-title last-blog-cont-conteudo">
-							<h4 class="lato-reg" style="font-size: 14px;font-weight: 400;text-transform: uppercase;text-align: center;"><?php the_subtitle(); ?></h4>
-							<a href="<?php the_permalink() ?>"><h2 class="news-blog-title VidaLoka"><?php the_title(); ?></h2>	</a>
-							<a href="<?php the_permalink() ?>"><h3 class="news-blog-conteudo VidaLoka" style="font-size: 12px;"><?php the_excerpt(); ?></h3></a>
-							<span class="container-100 post-share-trigger"><i class="icon-share" aria-hidden="true"></i></span>
-							<div class="share-hover DF">
-								<a class="container-33" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-								<a class="container-33" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-								<a class="container-33" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<div class="last-blog-conteudo">
+								<h4 class="lato-reg" style="font-size: 14px;font-weight: 400;text-transform: uppercase;text-align:left; width: 100%;"><?php the_subtitle(); ?></h4>
+								<a href="<?php the_permalink() ?>"><h2 class="news-blog-title VidaLoka"><?php the_title(); ?></h2>	</a>
+								<a href="<?php the_permalink() ?>"><h3 class="news-blog-conteudo VidaLoka"><?php the_excerpt(); ?></h3></a>
+								<span class="container-100 post-share-trigger"><i class="icon-share" aria-hidden="true"></i></span>
+								<div class="share-hover DF">
+									<a class="container-33" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+									<a class="container-33" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a class="container-33" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								</div>
 							</div>
 						</div>				
 					</article>	

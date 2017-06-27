@@ -31,7 +31,7 @@
 	<section class="container-100-14 DF FW" id="body" >
 		<div class="container-50-8 tb-container-50-5 mb-container-100 Bg-color-2 pad-40 DF FCA">
 			<div class="container-70 bloc-1">
-				<img class="responsive" src="http://leopoldinebolsas.com.br/wp-content/uploads/2017/04/bloco-1-home.png">
+				<img class="responsive" src="http://leopoldinebolsas.com.br/wp-content/uploads/2017/05/banner_home2.png">
 			</div>
 		</div>
 		<div class="container-50-8 tb-container-50-5 mb-container-100  DF FW bloc-2">
@@ -52,7 +52,7 @@
 			
 		</div>
 		<div class="container-100-4 banner-middle">
-			<img class="responsive" src="http://leopoldinebolsas.com.br/wp-content/uploads/2017/04/fashion_carteira.jpg">
+			<img class="responsive" src="http://leopoldinebolsas.com.br/wp-content/uploads/2017/05/banner_home.jpg">
 		</div>
 	</section>
 	<section class="container-100-32 Bg-color-2 cont-blog last">

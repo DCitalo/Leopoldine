@@ -3,7 +3,7 @@
 		<div class="container-100 Bg-color-1 DF FW top-bar">
 			<div class="container-90 DF FW">
 				<div class="container-10 cont-icon">
-					<img class="responsive" src="http://leopoldinebolsas.com.br/wp-content/uploads/2017/04/icon.png">
+					<a href="/"><img class="responsive" src="http://leopoldinebolsas.com.br/wp-content/uploads/2017/04/icon.png"></a>
 				</div>
 				<div class="cont-busca-menu">
 					<?php get_sidebar(); ?>

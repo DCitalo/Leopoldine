@@ -1,7 +1,7 @@
 /*  
 Theme Name: Leopoldine 
 Description: Blog da Leopoldine
-Author: ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âtalo Drago
+Author: ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âtalo Drago
 Author URI: https://dcitalo.github.io/
 */
 
@@ -69,15 +69,15 @@ footer{
 /*RESET*/
 /*Fontes e padroes*/
 .lato-reg{
-	font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .lato-400{
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 .lato-700{
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
 .VidaLoka , .VidaLoka > p , .VidaLoka > .descricao * , .VidaLoka > div{
 font-family:'freight';
@@ -88,6 +88,7 @@ font-family:'freight';
     background-size:100%;
     height:20px;
     width:20px;
+    margin-left: -10px;
     display:block;
 }
 .text-center{
@@ -159,7 +160,7 @@ font-family:'freight';
     visibility: hidden;
 }
 a{
-	color: #000000 !important;
+    color: #000000 !important;
 }
 /*Fontes e Padroes*/
 /*CONTAINER*/
@@ -340,11 +341,14 @@ a{
 .cont-menu > ul{
     align-items: baseline;
     -webkit-align-items: baseline;
+    
 }
 .cont-busca-menu > div > * {
     display: none;
 }
-
+.header-home > div > div > .cont-menu > ul{
+    width: 600px;
+}
 #search-2 {
     display: flex;
     display: -webkit-flex;
@@ -605,7 +609,7 @@ li.lightwidget__tile {
     overflow: hidden;
 } 
 .blog-middle > a {
-    height: 580px !important;
+    height: 560px !important;
     background: #000;
 }
 h3.home-blog-conteudo {
@@ -627,10 +631,10 @@ li.lightwidget__tile {
     margin: 0 20px !important;
 }
 h2.home-blog-title {
-    height: 40px;
+    height: 20px;
     margin: 10px 0;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h2.home-blog-title > a {
@@ -641,10 +645,11 @@ h2.home-blog-title > a {
 
 .blog-left-bloc > .cont-post-home , .blog-right-bloc > .cont-post-home {
     margin-bottom: 50px;
-}	
+}   
 h3.home-blog-conteudo > a > p {
     font-size: 14px;
     font-weight: 100;
+    text-align: left;
 }
 /*HOME*/
 /*CATEGORIA*/
@@ -837,13 +842,17 @@ ol.commentlist ul li{
     left: 50%;
     margin-left: -290px;
 }
-
+.news-blog-conteudo > p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
 .news-blog-title {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     line-height: 35px;
-    margin: 13px 0;
+    margin: 20px 0;
     color: #000;
 }
 
@@ -898,7 +907,7 @@ a.blog-cont-conteudo {
 
 .blog-first > .share-hover {
     left: 0;
-    width: 325px;
+    width: 0;
     bottom: 70px;
     height: 203px;
     -webkit-transform: translateX(-100%);
@@ -914,11 +923,12 @@ a.blog-cont-conteudo {
     -o-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+    width: 325px;
     pointer-events: all;
 }
 
 div.share-hover > a {
-    text-align: center;
+    text-align: center !important;
 }
 
 .container-100.read-more {
@@ -994,7 +1004,7 @@ article.cont-post-50 > a > img {
 .cont-post-50 > a.blog-cont-conteudo {
     width: 360px;
     margin-left: -180px;
-    padding: 20px 44px;
+    padding: 36px 40px;
     height: 192px;
     z-index:98;
 }
@@ -1022,7 +1032,7 @@ li.lightwidget__tile:nth-child(6) {
     width: 58px;
     height: 58px;
     left: 70px;
-    bottom: 125px;
+    bottom: 135px;
 }
 
 .cont-post-50 > .share-hover.DF {
@@ -1054,6 +1064,7 @@ body.customize-support {
 }
 .blog-article-title.last-blog-cont-conteudo {
     margin-left: 40px;
+    padding: 60px 0;
     position: relative;
     width: calc(50% - 20px);
     display: -webkit-flex;
@@ -1071,9 +1082,8 @@ article.artigo.container-100.cont-post-80.DF.FW {
     margin-bottom: 48px;
 }
 
-.last-blog-cont-conteudo > span.container-100.post-share-trigger {
-    bottom: 40px;
-    position: relative;
+last-blog-conteudo > .last-blog-conteudo > span.container-100.post-share-trigger {
+    bottom: 130px;
 }
 
 #conteudo > div:nth-child(3) > div.container-30.DF.FW {
@@ -1081,19 +1091,18 @@ article.artigo.container-100.cont-post-80.DF.FW {
     width: calc(30% - 40px);
 }
 
-.last-blog-cont-conteudo > .share-hover {
-    bottom: 30px;
-    height: inherit;
+.last-blog-conteudo > .share-hover {
+    bottom: 50px;
+    height: 40px;
     font-size: 16px;
-    width: 60%;
+    width: 60% !important;
     vertical-align: top;
     left: 50%;
-    text-align: justify;
     padding: 16px;
     background-color: #e6e6e6;
-    margin-left: -30%;
+    margin-left: -31%;
 }
-.last-blog-cont-conteudo > .share-hover::before{
+.last-blog-conteudo > .share-hover::before{
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1132,9 +1141,6 @@ article.artigo.container-100.cont-post-80.DF.FW {
     margin: 20px 0 !important;
 }
 
-.newsletter-blog > div > form > table > tbody > tr:nth-child(1) {
-}
-
 input.tnp-email {
     margin: 20px 0 !important;
     background: #FFFFFF !important;
@@ -1148,6 +1154,13 @@ input.tnp-submit {
     background: #000000 !important;
     width: 100% !important;
     text-align: center;
+}
+article.cont-post-80 > div > div  > a * {
+    text-align: left !important;
+}
+
+article.cont-post-80 > div > div > span.post-share-trigger {
+    bottom: 100px;
 }
 /*Blog*/
 /*Single-Page*/
@@ -1167,8 +1180,8 @@ h1.single-post-title {
     text-align: center;
 }
 .cont-single-post-content{
-	margin-top: 120px;
-	margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 100px;
 }
 .cont-social-single-post{
     margin-top: 120px;
@@ -1176,7 +1189,7 @@ h1.single-post-title {
 }
 ul.social-single-post > li {
     margin: 10px 0px;
-    text-align: center;
+    text-align: center;w
     padding: 0 40px 0 120px;
     font-size: 18px;
 }
