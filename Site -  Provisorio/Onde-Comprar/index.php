@@ -113,7 +113,7 @@
 											<a data-toggle="dropdown" class="dropdown-toggle">Showroom <i class="fa fa-angle-down customColor"></i></a>
 											<ul class="dropdown-menu">
 												<li><a href="/Categoria/Bolsas-de-Couro">Bolsas de Couro</a></li>
-												<li><a>Bolsas Sintéticas (em breve)</a></li>
+												<li><a href="/Categoria/Bolsas-Sinteticas">Bolsas Sintéticas</a></li>
 												<li><a>Óculos de Sol (em breve)</a></li>
 											</ul>
 										</li>
